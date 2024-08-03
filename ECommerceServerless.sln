@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34330.188
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECommerceServerless", "ECommerceServerless\src\ECommerceServerless\ECommerceServerless.csproj", "{4FED897F-E38E-48C6-AA09-65386423F01F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4FED897F-E38E-48C6-AA09-65386423F01F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FED897F-E38E-48C6-AA09-65386423F01F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4FED897F-E38E-48C6-AA09-65386423F01F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4FED897F-E38E-48C6-AA09-65386423F01F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {741767B0-545E-463A-B81B-EAF0FB224FEE}
+	EndGlobalSection
+EndGlobal
