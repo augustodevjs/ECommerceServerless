@@ -1,8 +1,8 @@
 ﻿using Amazon.SQS;
 using System.Text.Json;
 using Amazon.SQS.Model;
-using ECommerceServerless.Domain.Entities;
-using ECommerceServerless.Contracts.Services;
+using ECommerceLambda.Domain.Contracts.Services;
+using ECommerceLambda.Domain.Entities;
 
 namespace ECommerceServerless.Services;
 

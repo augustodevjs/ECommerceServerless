@@ -1,4 +1,4 @@
-﻿namespace ECommerceServerless.Domain.Entities;
+﻿namespace ECommerceLambda.Domain.Entities;
 
 public class OrderItem
 {

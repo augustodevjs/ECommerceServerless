@@ -1,6 +1,6 @@
 ﻿using Amazon.DynamoDBv2.DataModel;
-using ECommerceServerless.Contracts.Repository;
-using ECommerceServerless.Domain.Entities;
+using ECommerceLambda.Domain.Entities;
+using ECommerceLambda.Domain.Contracts.Repository;
 
 namespace ECommerceServerless.Repositories;
 

@@ -13,6 +13,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApproveOrderLambda.Tests", 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{0045779C-E511-4258-9AAE-20461320BDD1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECommerceLambda.Domain", "ECommerceServerless\src\ECommerceLambda.Domain\ECommerceLambda.Domain.csproj", "{F9660409-EDA3-4C4A-A1CC-9CD680ADA82F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -31,6 +33,10 @@ Global
 		{39C3F987-BEE8-47FC-B5FB-C4F0D8F2399B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{39C3F987-BEE8-47FC-B5FB-C4F0D8F2399B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{39C3F987-BEE8-47FC-B5FB-C4F0D8F2399B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F9660409-EDA3-4C4A-A1CC-9CD680ADA82F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9660409-EDA3-4C4A-A1CC-9CD680ADA82F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9660409-EDA3-4C4A-A1CC-9CD680ADA82F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9660409-EDA3-4C4A-A1CC-9CD680ADA82F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -39,6 +45,7 @@ Global
 		{4FED897F-E38E-48C6-AA09-65386423F01F} = {4C2366AA-5CA5-4DC5-AA0A-B42A843BFF91}
 		{1FD44A35-91D2-43FB-844D-F5591A4DB015} = {4C2366AA-5CA5-4DC5-AA0A-B42A843BFF91}
 		{39C3F987-BEE8-47FC-B5FB-C4F0D8F2399B} = {0045779C-E511-4258-9AAE-20461320BDD1}
+		{F9660409-EDA3-4C4A-A1CC-9CD680ADA82F} = {4C2366AA-5CA5-4DC5-AA0A-B42A843BFF91}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {741767B0-545E-463A-B81B-EAF0FB224FEE}

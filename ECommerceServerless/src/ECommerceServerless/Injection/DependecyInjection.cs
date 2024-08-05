@@ -3,8 +3,8 @@ using Amazon.DynamoDBv2;
 using Amazon.DynamoDBv2.DataModel;
 using ECommerceServerless.Services;
 using ECommerceServerless.Repositories;
-using ECommerceServerless.Contracts.Services;
-using ECommerceServerless.Contracts.Repository;
+using ECommerceLambda.Domain.Contracts.Services;
+using ECommerceLambda.Domain.Contracts.Repository;
 
 namespace ECommerceServerless.Injection;
 

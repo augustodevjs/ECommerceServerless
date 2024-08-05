@@ -1,4 +1,4 @@
-﻿namespace ECommerceServerless.Domain.Enums;
+﻿namespace ECommerceLambda.Domain.Enums;
 
 public enum StatusOrderEnum
 {

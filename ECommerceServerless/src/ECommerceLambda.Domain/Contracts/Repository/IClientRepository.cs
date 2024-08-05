@@ -1,8 +1,8 @@
-﻿using ECommerceServerless.Domain.Entities;
+﻿using ECommerceLambda.Domain.Entities;
 
-namespace ECommerceServerless.Contracts.Services;
+namespace ECommerceLambda.Domain.Contracts.Repository;
 
-public interface IClientService
+public interface IClientRepository
 {
     Task Add(Client client);
     Task Update(Client client);

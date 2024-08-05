@@ -1,6 +1,6 @@
-﻿using ECommerceServerless.Domain.Entities;
-using ECommerceServerless.Contracts.Services;
-using ECommerceServerless.Contracts.Repository;
+﻿using ECommerceLambda.Domain.Entities;
+using ECommerceLambda.Domain.Contracts.Services;
+using ECommerceLambda.Domain.Contracts.Repository;
 
 namespace ECommerceServerless.Services;
 

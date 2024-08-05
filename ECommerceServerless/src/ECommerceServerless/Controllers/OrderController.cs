@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using ECommerceServerless.Domain.Entities;
-using ECommerceServerless.Contracts.Services;
+using ECommerceLambda.Domain.Entities;
+using ECommerceLambda.Domain.Contracts.Services;
 
 namespace ECommerceServerless.Controllers;
 
