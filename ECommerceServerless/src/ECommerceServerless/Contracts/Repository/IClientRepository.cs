@@ -1,6 +1,6 @@
-﻿using ECommerceServerless.Entities;
+﻿using ECommerceServerless.Domain.Entities;
 
-namespace ECommerceServerless.Contracts;
+namespace ECommerceServerless.Contracts.Repository;
 
 public interface IClientRepository
 {

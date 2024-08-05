@@ -1,16 +1,9 @@
-using Amazon.DynamoDBv2;
-using Amazon.DynamoDBv2.DataModel;
-using ECommerceServerless.Contracts;
-using ECommerceServerless.Repositories;
+using ECommerceServerless.Injection;
 
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
-builder.Services.AddAWSLambdaHosting(LambdaEventSource.HttpApi);
-
-builder.Services.AddScoped<IDynamoDBContext, DynamoDBContext>();
-builder.Services.AddScoped<IClientRepository, ClientRepository>();
-builder.Services.AddScoped<IAmazonDynamoDB, AmazonDynamoDBClient>();
+builder.Services.AddDependecies();
 
 var app = builder.Build();
 

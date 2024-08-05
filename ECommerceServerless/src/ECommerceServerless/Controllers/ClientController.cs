@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
-using ECommerceServerless.Entities;
-using ECommerceServerless.Contracts;
+using ECommerceServerless.Domain.Entities;
+using ECommerceServerless.Contracts.Services;
 
 namespace ECommerceServerless.Controllers;
 
@@ -8,17 +8,17 @@ namespace ECommerceServerless.Controllers;
 [Route("[controller]")]
 public class ClientController : ControllerBase
 {
-    private readonly IClientRepository _repository;
+    private readonly IClientService _service;
 
-    public ClientController(IClientRepository repository)
+    public ClientController(IClientService service)
     {
-        _repository = repository;
+        _service = service;
     }
 
     [HttpGet]
     public async Task<IActionResult> GetClient(string document)
     {
-        var client = await _repository.Get(document);
+        var client = await _service.Get(document);
 
         if (client == null)
         {
@@ -31,21 +31,21 @@ public class ClientController : ControllerBase
     [HttpPost]
     public async Task<IActionResult> CreateClient(Client client)
     {
-        await _repository.Add(client);
+        await _service.Add(client);
         return Ok();
     }
 
     [HttpPut]
     public async Task<IActionResult> UpdateClient(Client client)
     {
-        await _repository.Update(client);
+        await _service.Update(client);
         return Ok();
     }
 
     [HttpDelete("{document}")]
     public async Task<IActionResult> DeleteClient(string document)
     {
-        await _repository.Delete(document);
+        await _service.Delete(document);
         return Ok();
     }
 }

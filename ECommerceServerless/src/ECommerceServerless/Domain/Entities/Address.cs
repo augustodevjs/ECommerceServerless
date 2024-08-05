@@ -1,4 +1,4 @@
-﻿namespace ECommerceServerless.Entities;
+﻿namespace ECommerceServerless.Domain.Entities;
 
 public class Address
 {

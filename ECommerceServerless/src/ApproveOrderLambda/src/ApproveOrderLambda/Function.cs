@@ -1,20 +1,25 @@
 using Amazon.Lambda.Core;
+using Amazon.Lambda.SQSEvents;
 
-// Assembly attribute to enable the Lambda function's JSON input to be converted into a .NET class.
 [assembly: LambdaSerializer(typeof(Amazon.Lambda.Serialization.SystemTextJson.DefaultLambdaJsonSerializer))]
 
 namespace ApproveOrderLambda;
+
 public class Function
 {
-
-    /// <summary>
-    /// A simple function that takes a string and does a ToUpper
-    /// </summary>
-    /// <param name="input">The event for the Lambda function handler to process.</param>
-    /// <param name="context">The ILambdaContext that provides methods for logging and describing the Lambda environment.</param>
-    /// <returns></returns>
-    public string FunctionHandler(string input, ILambdaContext context)
+    public async Task Handler(SQSEvent input, ILambdaContext context)
     {
-        return input.ToUpper();
+        foreach(var message in input.Records)
+        {
+            await ProcessMessage(message, context);
+        }
+    }
+
+    private async Task ProcessMessage(SQSEvent.SQSMessage message, ILambdaContext context)
+    {
+        context.Logger.Log("The message has been processed.");
+        context.Logger.Log(message.Body);
+
+        await Task.CompletedTask;
     }
 }
