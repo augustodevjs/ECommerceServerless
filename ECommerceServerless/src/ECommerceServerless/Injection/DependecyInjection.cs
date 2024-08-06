@@ -5,6 +5,7 @@ using ECommerceServerless.Services;
 using ECommerceServerless.Repositories;
 using ECommerceLambda.Domain.Contracts.Services;
 using ECommerceLambda.Domain.Contracts.Repository;
+using Microsoft.AspNetCore.Mvc;
 
 namespace ECommerceServerless.Injection;
 
@@ -15,6 +16,7 @@ public static class DependecyInjection
         services.AddServices();
         services.AddRepositories();
         services.AddAmazonDependecies();
+        services.Configure<ApiBehaviorOptions>(o => o.SuppressModelStateInvalidFilter = true);
     }
 
     public static void AddServices(this IServiceCollection services)
